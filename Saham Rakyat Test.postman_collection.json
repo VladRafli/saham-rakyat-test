@@ -1,0 +1,975 @@
+{
+	"info": {
+		"_postman_id": "01e60f15-0f23-46a7-ae14-11d795199f50",
+		"name": "Saham Rakyat Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25107121"
+	},
+	"item": [
+		{
+			"name": "Histories",
+			"item": [
+				{
+					"name": "Get All Histories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/histories?skip=&take=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"histories"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "take",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Histories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/histories/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"histories",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:06:29 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1084"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"User\": {\n                \"id\": 1,\n                \"full_name\": \"Prof. Sarai Dickinson\",\n                \"first_order\": true,\n                \"HistoriesID\": 1,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"eveniet\",\n                    \"price\": 969,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 1,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 11,\n                    \"name\": \"sapiente\",\n                    \"price\": 441,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 1,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Est aut amet molestias vel et.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 2,\n            \"User\": {\n                \"id\": 2,\n                \"full_name\": \"Ms. Elody Ortiz\",\n                \"first_order\": true,\n                \"HistoriesID\": 2,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 2,\n                    \"name\": \"voluptas\",\n                    \"price\": 798,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 2,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 12,\n                    \"name\": \"consequuntur\",\n                    \"price\": 676,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 2,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Maiores voluptatem aspernatur autem nihil quia.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"User\": {\n                \"id\": 3,\n                \"full_name\": \"Ms. Bridgette Wisozk\",\n                \"first_order\": true,\n                \"HistoriesID\": 3,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"quidem\",\n                    \"price\": 445,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 3,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 13,\n                    \"name\": \"earum\",\n                    \"price\": 990,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 3,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"At voluptatem quo rerum omnis quam.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 4,\n            \"User\": {\n                \"id\": 4,\n                \"full_name\": \"Princess Irma Graham\",\n                \"first_order\": true,\n                \"HistoriesID\": 4,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 4,\n                    \"name\": \"in\",\n                    \"price\": 964,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 4,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 14,\n                    \"name\": \"esse\",\n                    \"price\": 512,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 4,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Qui dolorem consequuntur inventore cupiditate voluptatum.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 5,\n            \"User\": {\n                \"id\": 5,\n                \"full_name\": \"Mrs. Chanelle Greenfelder\",\n                \"first_order\": true,\n                \"HistoriesID\": 5,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 5,\n                    \"name\": \"quod\",\n                    \"price\": 551,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 5,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 15,\n                    \"name\": \"eos\",\n                    \"price\": 207,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 5,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Sint et maxime in sit voluptas.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 6,\n            \"User\": {\n                \"id\": 6,\n                \"full_name\": \"Miss Meta Murphy\",\n                \"first_order\": true,\n                \"HistoriesID\": 6,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 6,\n                    \"name\": \"et\",\n                    \"price\": 807,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 6,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 16,\n                    \"name\": \"ut\",\n                    \"price\": 670,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 6,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Dolor aut qui facere laudantium quaerat.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 7,\n            \"User\": {\n                \"id\": 7,\n                \"full_name\": \"Prof. Amina Lesch\",\n                \"first_order\": true,\n                \"HistoriesID\": 7,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"unde\",\n                    \"price\": 293,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 7,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 17,\n                    \"name\": \"cumque\",\n                    \"price\": 259,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 7,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Ad iste possimus est quibusdam aut.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 8,\n            \"User\": {\n                \"id\": 8,\n                \"full_name\": \"Lady Marisa Boehm\",\n                \"first_order\": true,\n                \"HistoriesID\": 8,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 8,\n                    \"name\": \"sint\",\n                    \"price\": 317,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 8,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 18,\n                    \"name\": \"ducimus\",\n                    \"price\": 310,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 8,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Laborum corrupti consequatur consectetur quia voluptas.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 9,\n            \"User\": {\n                \"id\": 9,\n                \"full_name\": \"Lady Colleen Bashirian\",\n                \"first_order\": true,\n                \"HistoriesID\": 9,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 9,\n                    \"name\": \"beatae\",\n                    \"price\": 506,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 9,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 19,\n                    \"name\": \"adipisci\",\n                    \"price\": 552,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 9,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Non tempora in velit eos adipisci.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 10,\n            \"User\": {\n                \"id\": 10,\n                \"full_name\": \"Ms. Karen Cummerata\",\n                \"first_order\": true,\n                \"HistoriesID\": 10,\n                \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n                \"deleted_at\": null\n            },\n            \"Orders\": [\n                {\n                    \"id\": 10,\n                    \"name\": \"nostrum\",\n                    \"price\": 929,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 10,\n                    \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 20,\n                    \"name\": \"voluptatem\",\n                    \"price\": 747,\n                    \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n                    \"HistoriesID\": 10,\n                    \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"descriptions\": \"Deleniti dolor molestias qui non magnam.\",\n            \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Successfully get all histories.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get History By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/histories/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"histories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get History By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/histories/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"histories",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:08:28 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"User\": {\n            \"id\": 0,\n            \"full_name\": \"\",\n            \"first_order\": false,\n            \"HistoriesID\": 0,\n            \"create_at\": \"0001-01-01T00:00:00Z\",\n            \"updated_at\": \"0001-01-01T00:00:00Z\",\n            \"deleted_at\": null\n        },\n        \"Orders\": null,\n        \"descriptions\": \"Est aut amet molestias vel et.\",\n        \"create_at\": \"2023-06-01T12:06:17.285217+07:00\",\n        \"updated_at\": \"2023-06-01T12:06:17.285217+07:00\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Successfully get history.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New History",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/histories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"histories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing History",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dscriptions\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/histories/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"histories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing History",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/histories/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"histories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/users?take=&skip=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "take",
+									"value": ""
+								},
+								{
+									"key": "skip",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/users/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:07:03 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "401"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_name\": \"Prof. Sarai Dickinson\",\n            \"first_order\": true,\n            \"HistoriesID\": 1,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 2,\n            \"full_name\": \"Ms. Elody Ortiz\",\n            \"first_order\": true,\n            \"HistoriesID\": 2,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"full_name\": \"Ms. Bridgette Wisozk\",\n            \"first_order\": true,\n            \"HistoriesID\": 3,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 4,\n            \"full_name\": \"Princess Irma Graham\",\n            \"first_order\": true,\n            \"HistoriesID\": 4,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 5,\n            \"full_name\": \"Mrs. Chanelle Greenfelder\",\n            \"first_order\": true,\n            \"HistoriesID\": 5,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 6,\n            \"full_name\": \"Miss Meta Murphy\",\n            \"first_order\": true,\n            \"HistoriesID\": 6,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 7,\n            \"full_name\": \"Prof. Amina Lesch\",\n            \"first_order\": true,\n            \"HistoriesID\": 7,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 8,\n            \"full_name\": \"Lady Marisa Boehm\",\n            \"first_order\": true,\n            \"HistoriesID\": 8,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 9,\n            \"full_name\": \"Lady Colleen Bashirian\",\n            \"first_order\": true,\n            \"HistoriesID\": 9,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 10,\n            \"full_name\": \"Ms. Karen Cummerata\",\n            \"first_order\": true,\n            \"HistoriesID\": 10,\n            \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Successfully get all users.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/users/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:08:56 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"full_name\": \"Prof. Sarai Dickinson\",\n        \"first_order\": true,\n        \"HistoriesID\": 1,\n        \"create_at\": \"2023-06-01T12:06:17.288255+07:00\",\n        \"updated_at\": \"2023-06-01T12:06:17.288255+07:00\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Successfully get user.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create New User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/users/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 06:45:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "188"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"full_name\": \"\",\n        \"first_order\": true,\n        \"HistoriesID\": null,\n        \"created_at\": \"2023-06-01T13:45:19.8310025+07:00\",\n        \"updated_at\": \"2023-06-01T13:45:19.8310025+07:00\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Successfully created new user.\",\n    \"statusCode\": 201\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Existing User By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Existing User By Id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\": \"test\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/users/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 06:45:45 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"full_name\": \"test\",\n        \"first_order\": true,\n        \"HistoriesID\": null,\n        \"created_at\": \"2023-06-01T13:45:19.831002+07:00\",\n        \"updated_at\": \"2023-06-01T13:45:45.9685238+07:00\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Successfully updated user.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Exsiting User By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Exsiting User By Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/users/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 06:46:09 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 11,\n        \"full_name\": \"test\",\n        \"first_order\": true,\n        \"HistoriesID\": null,\n        \"created_at\": \"2023-06-01T13:45:19.831002+07:00\",\n        \"updated_at\": \"2023-06-01T13:45:45.968523+07:00\",\n        \"deleted_at\": \"2023-06-01T13:46:09.755864+07:00\"\n    },\n    \"message\": \"Successfully deleted user.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/orders?skip=&take=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "take",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/orders/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:07:07 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "519"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"eveniet\",\n            \"price\": 969,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 1,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"voluptas\",\n            \"price\": 798,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 2,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"quidem\",\n            \"price\": 445,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 3,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"in\",\n            \"price\": 964,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 4,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"quod\",\n            \"price\": 551,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 5,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"et\",\n            \"price\": 807,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 6,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"unde\",\n            \"price\": 293,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 7,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 8,\n            \"name\": \"sint\",\n            \"price\": 317,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 8,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"beatae\",\n            \"price\": 506,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 9,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"nostrum\",\n            \"price\": 929,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 10,\n            \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 11,\n            \"name\": \"sapiente\",\n            \"price\": 441,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 1,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 12,\n            \"name\": \"consequuntur\",\n            \"price\": 676,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 2,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 13,\n            \"name\": \"earum\",\n            \"price\": 990,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 3,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 14,\n            \"name\": \"esse\",\n            \"price\": 512,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 4,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 15,\n            \"name\": \"eos\",\n            \"price\": 207,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 5,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 16,\n            \"name\": \"ut\",\n            \"price\": 670,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 6,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 17,\n            \"name\": \"cumque\",\n            \"price\": 259,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 7,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 18,\n            \"name\": \"ducimus\",\n            \"price\": 310,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 8,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 19,\n            \"name\": \"adipisci\",\n            \"price\": 552,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 9,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 20,\n            \"name\": \"voluptatem\",\n            \"price\": 747,\n            \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n            \"HistoriesID\": 10,\n            \"create_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"updated_at\": \"2023-06-01T12:06:17.297138+07:00\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Successfully get all orders.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Order By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/orders/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Order By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/orders/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Jun 2023 05:09:15 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"eveniet\",\n        \"price\": 969,\n        \"expired_at\": \"0001-01-01T07:00:00+07:00\",\n        \"HistoriesID\": 1,\n        \"create_at\": \"2023-06-01T12:06:17.293148+07:00\",\n        \"updated_at\": \"2023-06-01T12:06:17.293148+07:00\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Successfully get order.\",\n    \"statusCode\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/orders",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/orders/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/orders/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

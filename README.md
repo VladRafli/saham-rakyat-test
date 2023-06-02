@@ -25,6 +25,10 @@ Repository
 - [X] Why clean architecture is good for your application ? if yes, please explain
 - [X] How to scale up your application and when it needs to be
 
+## API Documentation
+
+Available to be imported to Postman on root folder. 
+
 ## Architecture
 
 This project implements feature-based architecure for more simplified project structure and focused per feature development.
