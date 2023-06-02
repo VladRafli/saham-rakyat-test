@@ -1,0 +1,16 @@
+go 1.19
+
+use (
+	./
+	./helpers
+	./routes
+	./database
+	./database/migrations
+	./database/seeds
+	./src/histories/controller
+	./src/histories/service
+	./src/orders/controller
+	./src/orders/service
+	./src/users/controller
+	./src/users/service
+)
