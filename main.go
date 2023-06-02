@@ -31,6 +31,7 @@ func main() {
 
 	if os.Getenv("APP_ENV") == "development" {
 		seeds.Seed(db)
+		helpers.ClearCache()
 	}
 
 	app.Logger.Fatal(app.Start(":5000"))

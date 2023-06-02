@@ -77,32 +77,32 @@ func GetAll(c echo.Context) (*[]database.Orders, *echo.HTTPError) {
 	takeQuery := c.QueryParam("take")
 
 	if takeQuery != "" {
-		if _, err := strconv.ParseInt(takeQuery, 10, 32); err != nil {
+		if val, err := strconv.ParseInt(takeQuery, 10, 32); err != nil {
 			return nil, echo.NewHTTPError(http.StatusBadRequest, "Failed to parse take.")
+		} else {
+			take = int(val)
 		}
+	} else {
+		take = -1
 	}
 
 	skipQuery := c.QueryParam("skip")
 
 	if skipQuery != "" {
-		if _, err := strconv.ParseInt(skipQuery, 10, 32); err != nil {
+		if val, err := strconv.ParseInt(skipQuery, 10, 32); err != nil {
 			return nil, echo.NewHTTPError(http.StatusBadRequest, "Failed to parse skip.")
+		} else {
+			skip = int(val)
 		}
+	} else {
+		skip = -1
 	}
 
 	orders := &[]database.Orders{}
 
 	db := helpers.ConnectDatabase(os.Getenv("DB_HOST"), os.Getenv("DB_USER"), os.Getenv("DB_PASS"), os.Getenv("DB_NAME"))
 
-	if takeQuery != "" && skipQuery != "" {
-		db.Limit(take).Offset(skip).Find(orders)
-	} else if takeQuery != "" {
-		db.Limit(take).Find(orders)
-	} else if skipQuery != "" {
-		db.Offset(skip).Find(orders)
-	} else {
-		db.Find(orders)
-	}
+	db.Limit(take).Offset(skip).Find(orders)
 
 	cacheClient := helpers.InitRedisCache()
 
